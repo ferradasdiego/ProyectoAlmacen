@@ -129,7 +129,7 @@ let texto=fs.readFileSync("catalogo.json","utf-8");
 let catalogo=JSON.parse(texto);
 
 
-let alm1 = new Almacen(150);
+let alm1 = new Almacen(100);
 for(let elemento of catalogo){
     console.log(alm1.introducir(elemento))
 }
